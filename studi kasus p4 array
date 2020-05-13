@@ -1,0 +1,119 @@
+#include <stdio.h>
+#include <stdlib.h>
+main(){
+	printf (" NAMA : YUZRIL HIDAYAT\n NIM : F1B019145\n KELOMPOK 28\n\n\n");
+	
+	int kode , harga , i=1 , total_pembelian=0, diskon, total_bayar;
+	char kar= 'y' ;
+	
+	printf ("*=========================================*\n");
+	printf ("|kode|     barang         |     harga     |\n");
+	printf ("|=========================================|\n");
+	printf ("|  1 |  es cream          | Rp. 5.000     |\n");
+	printf ("|  2 |  sampo             | Rp. 8.000     |\n");
+	printf ("|  3 |  cokolatos         | Rp. 8.000     |\n");
+	printf ("|  4 |  permen            | Rp. 5.000     |\n");
+	printf ("|  5 |  kecap             | Rp. 15.000    |\n");
+	printf ("|  6 |  beras             | Rp. 75.000    |\n");
+	printf ("|  7 |  masker            | Rp. 50.000    |\n");
+	printf ("|  8 |  coki-coki         | Rp. 5.000     |\n");
+	printf ("|  9 |  surya 12          | Rp. 18.000    |\n");
+	printf ("| 10 |  surya 16          | Rp. 22.000    |\n");
+	printf ("| 11 |  sampoerna 12      | Rp. 20.000    |\n");
+	printf ("| 12 |  sampoerna 16      | Rp. 25.000    |\n");
+	printf ("| 13 |  lem dlukol        | Rp. 5.000     |\n");
+	printf ("| 14 |  in mild           | Rp. 15.000    |\n");
+	printf ("| 15 |  korek             | Rp. 9.000     |\n");
+    printf ("*=========================================*\n");
+	printf("masukkan kode barang :");
+	
+	
+while (kar=='y'){
+
+	scanf ("%d", &kode);
+	fflush (stdin);
+	if (kode==1)	{
+		printf("barang yang anda pilih adalah : es cream\n");
+	harga= 5000;
+	printf("1 = %d\n ", harga);
+}else if (kode==2){
+	printf("barang yang anda pilih adalah : sampo\n");
+		harga= 8000;
+	printf("2 = %d\n ", harga);
+}else if ( kode == 3){
+	printf("barang yang anda pilih adalah : cokolatos\n");
+		harga= 8000;
+	printf("3 = %d ", harga);
+}else if ( kode == 4){
+	printf("barang yang anda pilih adalah : permen\n");
+	harga= 5000;
+	printf("4 = %d ", harga);
+}else if ( kode == 5){
+	printf("barang yang anda pilih adalah : kecap\n");
+	harga= 15000;
+	printf("5 = %d ", harga);
+}else if ( kode == 6){
+	printf("barang yang anda pilih adalah : beras\n");
+	harga= 75000;
+	printf("6 = %d ", harga);
+}else if ( kode == 7){
+	printf("barang yang anda pilih adalah : masker\n");
+	harga= 50000;
+	printf("7 = %d ", harga);
+}else if ( kode == 8){
+	printf("barang yang anda pilih adalah : coki-coki\n");
+	harga= 5000;
+	printf("8 = %d ", harga);
+}else if ( kode == 9){
+	printf("barang yang anda pilih adalah : surya 12\n");
+	harga= 18000;
+	printf("9 = %d ", harga);
+}else if ( kode == 10){
+	printf("barang yang anda pilih adalah : surya 16\n");
+	harga= 22000;
+	printf("10 = %d ", harga);
+}else if ( kode == 11){
+	printf("barang yang anda pilih adalah : sampoerna 12\n");
+	harga= 20000;
+	printf("11 = %d ", harga);
+}else if ( kode == 12){
+	printf("barang yang anda pilih adalah : sampoerna 16\n");
+	harga= 25000;
+	printf("12 = %d ", harga);
+}else if ( kode == 13){
+	printf("barang yang anda pilih adalah : lem dlukol\n");
+	harga= 5000;
+	printf("13 = %d ", harga);
+}else if ( kode == 14){
+	printf("barang yang anda pilih adalah : in mild\n");
+	harga= 15000;
+	printf("14 = %d ", harga);
+}else if ( kode == 15){
+	printf("barang yang anda pilih adalah : korek\n");
+	harga= 9000;
+	printf("15 = %d ", harga);
+}else{
+	printf("input salah!!!! ");
+}
+total_pembelian=total_pembelian+harga;
+printf("MAU BELI BARANG LAGI?? [y/t]:");
+scanf("%c", &kar);
+i++;
+
+
+}
+printf("................................................\n");
+printf("................................................\n");
+printf("total pembelian = %d\n ", total_pembelian);
+if (total_pembelian > 100000){
+	diskon=0.1*total_pembelian;
+	printf ("diskon : %d\n", diskon);
+	total_bayar=total_pembelian-diskon;
+}else{
+	total_bayar=total_pembelian;
+}
+
+\printf("************************************************\n");
+\printf("************************************************\n");
+printf("total bayar=%d\n",total_bayar);
+}
